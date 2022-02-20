@@ -1,0 +1,175 @@
+/* Google Font Url Here */
+@import url("https://fonts.googleapis.com/css2?family=Average&family=Redressed&display=swap");
+
+/* Variable Here */
+:root {
+  --secondary-color: #f79332;
+  --primary-color: #3ca434;
+  --primary-font: "Average", serif;
+  --secondary-font: "Redressed", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--secondary-font);
+}
+
+h2,
+h3,
+p,
+a,
+span {
+  font-family: var(--primary-font);
+}
+
+/* Default Styles Here */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+ }
+
+ .pd{
+     padding-top: 3rem;
+     padding-bottom: 3rem;
+ }
+
+.nav_links {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  color: var(--secondary-color);
+  display: inline-block;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 2px solid var(--secondary-color);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.nav_links:hover {
+  color: var(--primary-color);
+}
+
+.nav_links:last-child {
+  border: none;
+}
+
+.desc{
+    color: #011500;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.bg{
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: var(--secondary-font) !important;
+}
+.title{
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* Header styles here */
+
+.header {
+  background-image: url("../img/header-bg.png");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Home Styles Here */
+.home {
+  background-image: url("../img/body-bg.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* Product Styles Here */
+.product_container{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.single_product{
+    width: 277px;
+}
+.single_product img{
+    width: 100%;
+    object-fit: cover;
+}
+.single_product h3{
+    color: #011500;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+/* Meet Styles Here */
+.meet{
+    background: linear-gradient(90deg, rgba(255, 237, 186, 0.2) 0%, rgba(255, 237, 186, 0) 100%);
+}
+
+/* Happy Styles Here */
+
+.happy{
+    background: linear-gradient(90deg, rgba(62, 171, 54, 0) 0%, rgba(62, 171, 54, 0.1) 100%);
+}
+
+/* Footer Start Here */
+.footer{
+    background: linear-gradient(90deg, rgba(255, 237, 186, 0.15) 50%, rgba(62, 171, 54, 0.07) 50%);
+}
+.footer_container{
+    display: flex;
+    gap: 1rem;
+}
+.left{
+    width: 50%;
+}
+.left a img{
+    width: 250px;
+}
+.left address{
+    margin-top: 1rem;
+}
+
+.right h1{
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.right ul{
+    list-style: none;
+}
+.right ul li{
+    line-height: 40px;
+}
+
+.right .nav_links{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
